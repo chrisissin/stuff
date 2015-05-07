@@ -25,8 +25,8 @@ for j in files:
             #writer.writerows(reader)
             for row in reader:
             #   print row['A']
-                if (row['B'] == ""):
-                    row['B'] = '0'
-                writer.writerow({'A':row['A'],'B':row['B']})
+                if (row['B'] != ""):
+                    #row['B'] = '0'
+                    writer.writerow({'A':row['A'],'B':row['B']})
     #else:
     #    pass
