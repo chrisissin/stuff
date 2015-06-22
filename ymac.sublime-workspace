@@ -3,6 +3,10 @@
 	{
 		"selected_items":
 		[
+			[
+				"read",
+				"readf"
+			]
 		]
 	},
 	"buffers":
@@ -20,6 +24,55 @@
 			{
 				"buffer_size": 1214,
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "pythonstuff/mergecvs.py",
+			"settings":
+			{
+				"buffer_size": 498,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "pythonstuff/dict",
+			"settings":
+			{
+				"buffer_size": 259,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "pythonstuff/alphab-sort-dict.py",
+			"settings":
+			{
+				"buffer_size": 453,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/chrisho/dev/trypagerank/pgr.pig",
+			"settings":
+			{
+				"buffer_size": 1782,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "yinst deactivate --dep gossip_apps_shared, yinst activate gossip_runtime, yinst restart gossip_apps_shared ",
+			"settings":
+			{
+				"buffer_size": 107,
+				"line_ending": "Unix",
+				"name": "yinst deactivate --dep gossip_apps_shared, yinst a"
+			}
+		},
+		{
+			"file": "pythonstuff/sorteddict",
+			"settings":
+			{
+				"buffer_size": 266,
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -47,6 +100,8 @@
 	},
 	"file_history":
 	[
+		"/Users/chrisho/dev/stuff/stuff/pythonstuff/sortedic",
+		"/Users/chrisho/dev/stuff/stuff/pythonstuff/20150506",
 		"/Users/chrisho/Desktop/popnow20150507investigate/failed-log-2015050623",
 		"/Users/chrisho/Desktop/popnow20150507investigate/bezenehourlylog",
 		"/Users/chrisho/Desktop/popnow20150507investigate/jobpassed-20150610",
@@ -97,7 +152,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 6,
 			"sheets":
 			[
 				{
@@ -137,8 +192,8 @@
 						"selection":
 						[
 							[
-								0,
-								0
+								152,
+								152
 							]
 						],
 						"settings":
@@ -146,6 +201,166 @@
 							"syntax": "Packages/Python/Python.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "pythonstuff/mergecvs.py",
+					"settings":
+					{
+						"buffer_size": 498,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								498,
+								498
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "pythonstuff/dict",
+					"settings":
+					{
+						"buffer_size": 259,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "pythonstuff/alphab-sort-dict.py",
+					"settings":
+					{
+						"buffer_size": 453,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								453
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/Users/chrisho/dev/trypagerank/pgr.pig",
+					"settings":
+					{
+						"buffer_size": 1782,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"settings":
+					{
+						"buffer_size": 107,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								107
+							]
+						],
+						"settings":
+						{
+							"auto_name": "yinst deactivate --dep gossip_apps_shared, yinst a",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "pythonstuff/sorteddict",
+					"settings":
+					{
+						"buffer_size": 266,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -162,7 +377,7 @@
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 31.0
 	},
 	"layout":
 	{

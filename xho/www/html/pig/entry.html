@@ -1,0 +1,37 @@
+<html>
+<head>
+	<LINK rel="stylesheet" href="entry.css" type="text/css">
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>	
+	
+</head>
+<body>
+<div id="floater" ></div>	
+<div id="middle">	
+<div id="overlay">
+     <div>
+		<img id="firstred" class="displayed" src="pig.png" onclick="cloneme();"/>
+     </div>
+
+	<div id="dialog" >
+		<p>This is the default dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>
+	</div>
+</div>
+</div>
+
+<script>
+	$(function() {
+		$( "#dialog" ).dialog();
+		$( "#dialog" ).dialog( "option", "closeText", 'hide' );
+		$( "#dialog" ).dialog( "option", "dialogClass", "demo" );
+	});
+</script>
+
+<script>
+function cloneme()
+{
+	$('#firstred').after('<img id="theImg" src="pig.png" />');
+}
+</script>
+</body>
+</html>

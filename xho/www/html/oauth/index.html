@@ -1,0 +1,31 @@
+<html>
+
+<head>
+	<title>OAuth Tutorial</title>
+	<meta name="google-site-verification" content="LitTtwts3Ss1i481zWLhIzlB7AtobfnaIt-mQ6redGI" />
+</head>
+
+<body>
+	<form action="get_request_token.php">
+	Service:
+	<select name="service">
+		<option value="google">Google</option>
+		<option value="twitter">Twitter</option>
+		<option value="yahoo">Yahoo!</option>
+	</select><br /><br />
+	Consumer Key:
+	<input type="text" name="consumer_key" size="40" /><br /><br />
+	Consumer Secret:
+	<input type="text" name="consumer_secret" size="60" /><br /><br />
+	Signature Method:
+	<select name="sign_method">
+		<option value="hmac-sha1">HMAC-SHA1</option>
+	</select><br /><br/>
+	Callback:
+	<input type="text" name="callback" size="100" value="http://46.137.212.250/oauth/authorized.php" /><br /><br />
+	<input type="submit" />
+	</form>
+	<a href="source.php?file=get_request_token.php">get_request_token.php</a>
+</body>
+
+</html>

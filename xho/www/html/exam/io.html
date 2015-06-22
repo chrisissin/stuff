@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <title>Demo Page</title>
+        <style>
+            body { padding:20px; }
+            .return-container { border: 1px solid #999; position:relative; margin:20px 0; padding:10px 20px 20px 20px; }
+            .return-container span { position:relative; top:-20px; padding:0 10px; background-color:#FFF;}
+        </style>
+    </head>
+    <body>
+        <a href="#" class="io-button">Make a IO request</a>
+        <div class="return-container"><span>Result</span><div class="return-content"></div></div>
+        <script type="text/javascript" src="http://yui.yahooapis.com/3.5.0/build/yui/yui-min.js"></script>
+        <script type="text/javascript">
+            YUI().use('node', 'event', 'io', function(Y) 
+            { 
+                var ioButton    = Y.one('.io-button'),
+                    returnBlock = Y.one('.return-content');
+
+                ioButton.on('click', function(e)
+                {
+                    Y.log('running Y.io...');
+                    //YOUR CODE HERE
+
+                    var io_url = 'xhr_01.php',
+                        io_conf = {
+                            method  : 'GET',
+                            data    : 'input=abc',
+                            on      : {
+                                success : function (id, r)
+                                {
+					Y.one( '.return-content' ).setContent( id + ' ' +r.responseText );
+                    			var io_url2 = 'xhr_02.php',
+		                        io_conf2 = {
+		                            method  : 'GET',
+		                            data    : 'input=abc&hash=' + r.responseText,
+		                            on      : {
+		                                success : function (id, r)
+		                                {
+							Y.one( '.return-content' ).setContent( id + ' ' +r.responseText );
+		                                }
+		                            }
+		                        };
+					Y.io( io_url2, io_conf2 );
+                                }
+                            }
+                        };
+                    
+                    Y.io(io_url, io_conf);
+                    Y.io(io_url, io_conf);
+                    Y.io(io_url, io_conf);
+                });
+            });
+        </script>
+    </body>
+</html>

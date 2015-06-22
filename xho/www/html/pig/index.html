@@ -1,0 +1,25 @@
+<html>
+<head>
+	<LINK rel="stylesheet" href="entry.css" type="text/css">
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+</head>
+<body>
+<div id="thediv" class="whole">	
+<img id="firstred" class="displayed" src="red.png" onclick="cloneme();"/>
+</div>
+<script>
+function cloneme()
+{
+	$('#firstred').after('<img id="theImg" src="red.png" />');
+}
+</script>
+</body>
+</html>
+
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"> 
+</script> 
+ 
+<script type="text/javascript"> 
+    _uacct = "UA-312021-1";
+    urchinTracker();
+</script> 
